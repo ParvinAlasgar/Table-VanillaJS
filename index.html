@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product table</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script src="./assets/js/index.js" defer></script>
+  </head>
+  <body>
+    <section id="app">
+      <div class="container">
+        <form class="text-center">
+          <div class="mb-3">
+            <label class="d-block" for="product-name">Product name</label>
+            <input
+              id="product-name"
+              class="form-control"
+              type="text"
+              placeholder="Enter product name"
+              required
+            />
+          </div>
+          <div class="mb-3">
+            <label class="d-block" for="product-category"
+              >Product category</label
+            >
+            <input
+              id="product-category"
+              class="form-control"
+              type="text"
+              placeholder="Enter product category"
+              required
+            />
+          </div>
+          <div class="mb-3">
+            <label class="d-block" for="product-category">Product price</label>
+            <input
+              id="product-price"
+              class="form-control"
+              type="text"
+              placeholder="Enter product price"
+              required
+            />
+          </div>
+          <div class="mb-3">
+            <label class="d-block" for="product-stock-count"
+              >Product stock count</label
+            >
+            <input
+              id="product-stock-count"
+              class="form-control"
+              type="text"
+              placeholder="Enter stock count"
+              required
+            />
+          </div>
+          <div class="mb-3">
+            <label class="d-block" for="product-description"
+              >Product description</label
+            >
+            <input
+              id="product-description"
+              class="form-control"
+              type="text"
+              placeholder="Enter description"
+              required
+            />
+          </div>
+          <div class="mb-3">
+            <label class="d-block" for="product-img-url">Product img url</label>
+            <input
+              id="product-img-url"
+              class="form-control"
+              type="text"
+              placeholder="Enter img url"
+              required
+            />
+          </div>
+          <button class="mb-3 btn btn-success" type="submit">Submit</button>
+        </form>
+      </div>
+    </section>
+    <h1 class="text-center">Products table</h1>
+    <table class="table table-dark table-striped">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Product name</th>
+          <th>Product category</th>
+          <th>Product price</th>
+          <th>Product count</th>
+          <th>Product description</th>
+          <th>Product image</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </body>
+</html>
